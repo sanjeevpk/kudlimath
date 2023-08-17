@@ -34,4 +34,11 @@ public class HomeMvcController {
     model.addObject("items", "hello");
     return model;
   }
+  
+  @RequestMapping(value = "/donate", method = RequestMethod.GET)
+  public ModelAndView donate(ModelAndView model) {
+    model.setViewName("donate");
+    model.addObject("donate", "hello");
+    return model;
+  }
 }

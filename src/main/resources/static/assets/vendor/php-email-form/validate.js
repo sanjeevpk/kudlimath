@@ -15,6 +15,7 @@
       let thisForm = this;
 
       let action = thisForm.getAttribute('action');
+      action = window.location.pathname.substring(0, window.location.pathname.indexOf("/",2)) + "/contact"
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
       
       if( ! action ) {
